@@ -1,0 +1,100 @@
+.page {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+}
+.canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 5rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.logo {
+  border-radius: 0;
+  background: transparent;
+  mix-blend-mode: lighten;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(232, 99, 10, 0.6));
+  animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { filter: drop-shadow(0 0 16px rgba(232, 99, 10, 0.5)); }
+  50% { filter: drop-shadow(0 0 36px rgba(232, 99, 10, 0.95)); }
+}
+.headline {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+.accent {
+  color: #e8630a;
+}
+.sub {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--muted);
+  max-width: 500px;
+  line-height: 1.6;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.btn {
+  background: #e8630a;
+  color: #0a0a0a;
+  padding: 0.65rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 0 18px rgba(232, 99, 10, 0.45);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.btn:hover {
+  background: #ff7518;
+  box-shadow: 0 0 32px rgba(232, 99, 10, 0.8);
+}
+.btnOutline {
+  background: transparent;
+  color: #e8630a;
+  padding: 0.65rem 1.6rem;
+  border-radius: 6px;
+  border: 1.5px solid #e8630a;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.btnOutline:hover {
+  background: rgba(232, 99, 10, 0.1);
+  box-shadow: 0 0 24px rgba(232, 99, 10, 0.4);
+}

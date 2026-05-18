@@ -1,0 +1,79 @@
+.endpoints {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.endpoints h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e8630a;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+.note {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+  color: var(--muted);
+}
+.group h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.6rem;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid #2a2020;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #2a2020;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.table th {
+  background: #161616;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+.table tr:hover td {
+  background: rgba(232, 99, 10, 0.04);
+}
+.method {
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-family: "Share Tech Mono", monospace;
+}
+.get { background: #1f3d2b; color: #6ee7a8; }
+.post { background: #1f2f4d; color: #7fb0ff; }
+.put { background: #4d3f1f; color: #f5c97f; }
+.delete { background: #4d1f1f; color: #ff9f9f; }
+.path {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+@media (max-width: 600px) {
+  .table th, .table td { padding: 0.45rem 0.5rem; font-size: 0.85rem; }
+}
