@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx'
 import Vision from './pages/Vision.jsx'
 import Endpoints from './pages/Endpoints.jsx'
 import Ideas from './pages/Ideas.jsx'
+import Reflections from './pages/Reflections.jsx'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/vision" element={<Vision />} />
           <Route path="/endpoints" element={<Endpoints />} />
           <Route path="/ideas" element={<Ideas />} />
+          <Route path="/reflections/*" element={<Reflections />} />
         </Routes>
       </main>
     </>

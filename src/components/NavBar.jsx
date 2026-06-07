@@ -13,6 +13,7 @@ function NavBar() {
         <NavLink to="/vision" className={linkClass}>Vision</NavLink>
         <NavLink to="/endpoints" className={linkClass}>Endpoints</NavLink>
         <NavLink to="/ideas" className={linkClass}>Frontend Ideas</NavLink>
+        <NavLink to="/reflections" className={linkClass}>Reflections</NavLink>
       </nav>
     </header>
   )

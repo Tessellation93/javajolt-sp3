@@ -1,0 +1,102 @@
+.layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  position: sticky;
+  top: 2rem;
+  border-right: 1px solid rgba(232, 99, 10, 0.2);
+  padding-right: 1rem;
+}
+
+.sidebarTitle {
+  color: #e8630a;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebarLink {
+  color: #bbb;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.sidebarLink:hover {
+  color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.sidebarActive {
+  color: #e8630a;
+  border-left: 3px solid #e8630a;
+  background: rgba(232, 99, 10, 0.08);
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.post {
+  animation: fade 0.3s ease;
+}
+
+.postDate {
+  display: inline-block;
+  color: #888;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.postTopic {
+  color: #e8630a;
+  font-size: 1.7rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.postText {
+  color: #ccc;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: static;
+    flex: 1;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(232, 99, 10, 0.2);
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+  .sidebarNav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
